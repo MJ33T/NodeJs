@@ -1,0 +1,22 @@
+const app = require('./app');
+
+const fs = require('fs');
+
+
+
+
+
+console.log(app);
+
+const arr =[2,6,5,8,5,9,5,15];
+
+let result = arr.filter((item) => {
+    return item > 5
+})
+
+console.log("->>",__dirname);
+console.log("->>", __filename);
+
+fs.writeFileSync("Test.txt", "Testing File System");
+
+console.log(result);
